@@ -9,30 +9,34 @@ public class Runner {
 
     }
 
-//    public boolean closeFar(int a, int b, int c) {
-//        int aDifferenceB = Math.abs(a-b);
-//        int aDifferenceC = Math.abs(a-c);
-//        int bDifferenceC = Math.abs(b-c);
-//        boolean resultCloseFar = false;
-//
-//        if (aDifferenceB < 2) {
-//            if (aDifferenceC >= 2 && bDifferenceC >= 2) {
-//                resultCloseFar = true;
-//            } else {
-//                resultCloseFar = false;
-//            }
-//        }
-//
-//        if (aDifferenceC < 2) {
-//            if (aDifferenceB >= 2 && bDifferenceC >= 2) {
-//                resultCloseFar = true;
-//            } else {
-//                resultCloseFar = false;
-//            }
-//        }
-//
-//        return resultCloseFar;
-//    }
+    // First Attempt was successful, Refactored bellow.
+
+    /*
+    public boolean closeFar(int a, int b, int c) {
+        int aDifferenceB = Math.abs(a-b);
+        int aDifferenceC = Math.abs(a-c);
+        int bDifferenceC = Math.abs(b-c);
+        boolean resultCloseFar = false;
+
+        if (aDifferenceB < 2) {
+            if (aDifferenceC >= 2 && bDifferenceC >= 2) {
+                resultCloseFar = true;
+            } else {
+                resultCloseFar = false;
+            }
+        }
+
+        if (aDifferenceC < 2) {
+            if (aDifferenceB >= 2 && bDifferenceC >= 2) {
+                resultCloseFar = true;
+            } else {
+                resultCloseFar = false;
+            }
+        }
+
+        return resultCloseFar;
+    }
+    */
 
     public boolean closeFar(int a, int b, int c) {
         int aDifferenceB = Math.abs(a-b);
