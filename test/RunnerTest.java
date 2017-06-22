@@ -19,6 +19,8 @@ public class RunnerTest {
 
     }
 
+
+
     // Testing closeFar()
 
     @Test
@@ -43,6 +45,11 @@ public class RunnerTest {
 
     @Test
     public void aSameBfarC() throws Exception {
+        assertTrue(myRunner.closeFar(3, 3, 6));
+    }
+
+    @Test
+    public void aSameCFarB() throws Exception {
         assertTrue(myRunner.closeFar(3, 3, 6));
     }
 
@@ -91,6 +98,8 @@ public class RunnerTest {
         assertEquals(4, myRunner.maxBlock("XX2222BBBbbXX2222"));
     }
 
+    // Testing mirrorEndsWords
+
     @Test
     public void mirrorEndsWords() throws Exception {
         assertEquals("derp", myRunner.mirrorEnds("derpaherpiepred"));
@@ -105,6 +114,8 @@ public class RunnerTest {
     public void mirrorEndsAll() throws Exception {
         assertEquals("yayay", myRunner.mirrorEnds("yayay"));
     }
+
+    // Testing sumNumbers()
 
     @Test
     public void sumNumbersNone() throws Exception {
